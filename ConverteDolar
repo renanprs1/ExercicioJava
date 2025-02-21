@@ -1,0 +1,19 @@
+package controle;
+
+import java.util.Scanner;
+
+public class Dolar
+{
+	public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.print("Digite a quantidade de real desejada para dolar: ");
+        double real = sc.nextDouble();
+        
+        double dolar = real / 5.73;
+        
+        System.out.println("A quantidade de dolar a ser recebida é: " + dolar);
+        sc.close();
+        
+	}
+}
