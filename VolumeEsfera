@@ -15,5 +15,6 @@ public class VolumeEsfera
 		double volume = (4.0/3.0) * pi * Math.pow(raio,3);
 		
 		System.out.println("O volume da esfera é: " + volume);
+		sc.close();
 	}
 }
