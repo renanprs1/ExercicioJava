@@ -1,0 +1,23 @@
+package controle;
+
+import java.util.Scanner;
+
+public class DistanciaEntreDoisPontos
+{
+	public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+      System.out.print("Digite as coordenadas (x1,y1): ");
+      double x1 = sc.nextDouble();
+      double y1 = sc.nextDouble();
+      
+      System.out.print("Digite as coordenadas (x2,y2): ");
+      double x2 = sc.nextDouble();
+      double y2 = sc.nextDouble();
+      
+      double Distancia = Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
+      
+      System.out.println("A distância entre os dois pontos é: " + distancia);
+        sc.close();
+	}
+}
