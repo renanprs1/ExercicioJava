@@ -1,0 +1,27 @@
+package controle;
+
+import java.util.Scanner;
+
+public class CalcularSalario {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("Digite o seu salário bruto: ");
+		double salarioBruto = sc.nextDouble();
+		
+		double salarioLiquido;
+		
+		if(salarioBruto <= 1518){
+			salarioLiquido = salarioBruto * (1 - 0.075);
+		}
+		if(salarioBruto > 1518 && salarioBruto <= 2793) {
+			salarioLiquido = salarioBruto * (1 - 0.09);
+		}
+		else {
+            salarioLiquido = salarioBruto * (1 - 0.15); 
+        }
+		
+		System.out.println("Seu salário liquido é : " + salarioLiquido);
+		sc.close();
+	}
+}
