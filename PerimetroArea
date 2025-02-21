@@ -1,0 +1,22 @@
+package controle;
+
+import java.util.Scanner;
+
+public class PerimetroArea {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.printf("Digite a altura do retângulo: ");
+		double altura = sc.nextDouble();
+		
+		System.out.print("Digite a base do retângulo: ");
+		double base = sc.nextDouble();
+		
+		double perimetro = 2 * (base + altura);
+		
+		double area = base * altura;
+		
+		System.out.println("A perimetro é : " + perimetro + "e a area é : " + area);
+	}
+
+}
